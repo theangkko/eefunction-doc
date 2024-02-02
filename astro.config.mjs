@@ -12,6 +12,7 @@ export default defineConfig({
 				github: 'https://theangkko.github.io',
 			},
 			sidebar: [
+				// { label: 'Home', link: '/' },
 				{
 					label: 'Guides',
 					items: [
