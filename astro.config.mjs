@@ -7,9 +7,9 @@ export default defineConfig({
 	base: '/eefunction-doc',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'eeFunction Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://theangkko.github.io',
 			},
 			sidebar: [
 				{
