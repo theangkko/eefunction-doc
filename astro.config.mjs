@@ -3,6 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	  site: 'https://theangkko.github.io',
+	  base: '/eefunction-doc',
 	integrations: [
 		starlight({
 			title: 'My Docs',
