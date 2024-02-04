@@ -1,15 +1,35 @@
 ---
 title: Humid Air - ASHRAE
-description: A reference page in my new Starlight docs site.
+description: A reference page.
 ---
 
-eeFunction에서 참고/사용하는 모듈과 각 모듈의 상세정보는 개별페이지에서 확인이 가능합니다.   
-Open Source library의 License와 Code는 아래 링크를 통해 확인 가능합니다.
-
-현재 사용 중인 대표적인 목록은 아래입니다.
-
-- [xsteam2](https://github.com/kpatvt/xsteam2) by kpatvt
-- [GERG2008](https://github.com/TorrensJoaquin/GERG2008/) by TorrensJoaquin
+Humid Air은 다음 코드를 사용합니다
 - [psychrolib](https://github.com/psychrometrics/psychrolib) by psychrometrics
-- [web-thermodynamics](https://github.com/dvd101x/web-thermodynamics) by dvd101x
-- [CoolProp.org](http://www.coolprop.org/)
+
+Humid Air는 ASHRAE Code에 기반한 함수입니다.   
+압력, 온도, 습도를 입력인수로 사용하여 각종 결과값을 제공합니다.
+
+
+
+**Humid Air function UNIT**
+
+|Abbr.|INPUT Unit|RESULT Unit|Function Description|
+|-----|------|------|--------------------|
+|RHO_PT_TEST   |pressure, bara <br>Temperature, 'C<br>             |kg/m3 |Get Air Density|
+|H_TDRY_RH_P   |Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 <br> Pressure, bara|kJ/kg|Get Humid Air Enthalpy|
+|HDRY_TDRY     |Dry Temperature, 'C                                 |kJ/kg       |Get Dry Air Enthalpy|
+|HUMR_TDRY_RH_P|Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 <br> Pressure, bara  |kg/kgDA|Get Humidity ratio|
+|HUMR_H_TDRY   |Moist Air Enthalpy, kJ/kg <br> Dry Temperature, 'C  |kg/kgAir|Get Humidity ratio|
+|HUMR_PVAP_P   |Vapor Pressure, bara <br> Pressure, bara    |kg/kgAir|Get Humidity ratio|
+|PSAT_TDRY     |Dry Temperature, 'C         | bara|Get Saturated (at 100% RH) Vapor Pressure|
+|PVAP_TDEW     |Dewpoint Temp, 'C    | bara|Get Vapor Pressure|
+|PVAP_TDRY_RH  |Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 | bara|Get Vapor Pressure|
+|RHO_TDRY_RH_P |Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 <br> Pressure, bara  |kg/m3|Get Humid Air Density|
+|RHO_TDRY_P    |Dry Temperature, 'C <br> Pressure, bara | kg/m3|Get Dry Air Density|
+|RH_TDRY_HUMR_P|Dry Temperature, 'C <br> humRatio Humidity ratio, kg/kgAir <br> Pressure, bara  |decimal|Get Rel. Humidity|
+|RH_TDRY_TWEB  |Dry Temperature, 'C <br> tWetBulb Wet Temp, 'C <br> Pressure, bara           |decimal|Get Rel. Humidity|
+|TDRY_TDEW_P   |Dry Temperature, 'C <br> DewPoint Temp, 'C  <br> Pressure, bara |'C |Get Wet Bulb Temp|
+|TWEB_TDRY_RH_P|Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 <br> Pressure, bara|'C|Get Wet Bulb Temp|
+|V_TDRY_P      |Dry Temperature, 'C <br> Pressure, bara |   m3/kg|Get Dry Air Volume|
+|V_TDRY_RH_P   |Dry Temperature, 'C <br> Rel. Humidity 0.0~1.0 <br> Pressure, bara| m3/kg   |Get Humid Air Volume|
+|VIS_T         |Dry Temperature, 'C'     |  Pa-s|Get Typical Air Viscosity
