@@ -26,6 +26,14 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Functions',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'General', link: '/functions/general/' },
+						{ label: 'Engineering', link: '/functions/engineering/' },
+					],
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
