@@ -3,8 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://theangkko.github.io',
-	base: '/eefunction-doc',
+	site: 'https://eefunction-doc.pages.dev',
+	base: '/',
 	integrations: [
 		starlight({
 			title: 'eeFunction Docs',
@@ -13,7 +13,7 @@ export default defineConfig({
         src: './src/assets/icon_eefunction.png',
       },
 			social: {
-				email: 'https://theangkko.github.io',
+				email: 'https://eefunction-doc.pages.dev',
 			},
 			sidebar: [
 				// { label: 'Home', link: '/' },
