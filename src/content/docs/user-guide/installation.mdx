@@ -4,6 +4,8 @@ description: 설치하는 방법을 설명합니다.
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import ButtonDownload from '../../../components/ButtonDownload.astro';
+
 
 설치하는 방법에 대해서 설명합니다.
 MS Appsource에서 설치하는 방법이 아닌, Side-Loading방식의 설치입니다.
@@ -18,12 +20,14 @@ MS Appsource에서 설치하는 방법이 아닌, Side-Loading방식의 설치�
 #### 1) Download manifest for eeFunction
 터미널Terminal 또는 명령프롬프트CMD 창에서 아래 명령어를 입력하거나 Download 버튼을 눌러 Add-in 설치용 'manifest_eeFunction.xml'을 다운받습니다.
 
-<LinkCard
+
+{/* <LinkCard
   title="manifest download"
   description="다음 주소에서 다운로드버튼을 이용해서 설치하세요"
   href="https://eefunction.pages.dev/manifest_eeFunction.xml"
-/>
+/> */}
 
+<ButtonDownload />
 
 ``` powershell or bash
 curl.exe --output C:\manifest/manifest_eeFunction.xml --url https://eefunction.pages.dev/manifest_eeFunction.xml --ssl-no-revoke

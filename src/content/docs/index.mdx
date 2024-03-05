@@ -17,6 +17,10 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import Button from '../../components/Button.astro';
+import ButtonJS from '../../components/ButtonJS.astro';
+import Discord from '../../components/Discord.astro';
+
 
 
 <CardGrid>
@@ -24,9 +28,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Input `=ee.` to use like excel function.
 	</Card>
 	<Card title="Take a guided tour" icon="add-document">
-		Complete our introductory [the Example Docs](/eefunction-doc/reference/example/) to learn the basics.
+		Complete our introductory [the Example Docs](/example/example01) to learn the basics.
 	</Card>
 </CardGrid>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<Card title="Read the docs" icon="open-book">
+  Learn more in [the Starlight Docs](https://starlight.astro.build/).
+</Card>
+
+
+{/* <Button title="HelloButton"> </Button> */}
+
+{/* <ButtonJS class='primary'>Hi </ButtonJS> */}
+
+
+
