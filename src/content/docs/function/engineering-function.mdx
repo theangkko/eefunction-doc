@@ -25,6 +25,18 @@ Input as 150 deg.C Temperature, 60% Relative Humid Ratio, and Ambient Pressure, 
 `=ee.HUMIDAIR_RHO_TDRY_RH_P(35, 0.6, 1.013)`     
 `=1.13082` kg/m3 density of Air  <br/>
 
+<br />
+
+## Compressible Gas - GERG2008
+=ee.Gas_xxx()
+
+ex) Get Denity with (Dry Temperature, Relative Humid Ratio and Ambient Pressure) <br/>
+`=ee.GASRHO_PT()`
+
+Input as 2 bara, 35 deg.C Temperature with FluidName<br/>
+`=ee.GASRHO_PT()(2, 35, Methane[0.6]&Ethane[0.4])`     
+`=ee.GASRHO_PT()(2, 35, Range(A3))`     
+`=1.70111` kg/m3 density of Gas  <br/>
 
 <br />
 
