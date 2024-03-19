@@ -1,0 +1,58 @@
+---
+title: Engineering Function
+description: A reference page.
+---
+   
+## Steam Water - IF97 Steam Table 
+=ee.STEAMxxx()
+
+ex) Get Steam Entalpy with (Pressure, Temperature) <br/>
+`=ee.STEAMH_PT()`
+
+Input as 2 bara pressure and 150 deg.C Temperature  <br/>
+`=ee.STEAMH_PT(2, 150)`    
+`=2769.09` kJ/kg Enthalpy of Steam <br/>
+
+<br />
+
+## Humid Air - ASHRAE
+=ee.HUMIDAIR_xxx()
+
+ex) Get Denity with (Dry Temperature, Relative Humid Ratio and Ambient Pressure) <br/>
+`=ee.HUMIDAIR_RHO_TDRY_RH_P()`
+
+Input as 150 deg.C Temperature, 60% Relative Humid Ratio, and Ambient Pressure, bara <br/>
+`=ee.HUMIDAIR_RHO_TDRY_RH_P(35, 0.6, 1.013)`     
+`=1.13082` kg/m3 density of Air  <br/>
+
+
+<br />
+
+## Friction Factor of pipe
+=ee.FRICTIONFACTOR()
+
+ex) Get friction factor with (dia_mm, roughness_mm, reynolds) <br/>
+Input as DN200, 202.74 mm pipe inner diameter, 0.046 carbon pipe absolute roughness, reynolds <br/>
+`=ee.FRICTIONFACTOR(202.74, 0.046, 213850)`     
+`=0.0171` friction factor  <br/>
+
+
+<br />
+
+
+## Interpolation as Linear, Cubic
+=ee.INTERPOLATION1D()
+
+ex) Get interpolated value with (X value, X-Table, Y-Table, "Linear"=Option Default) <br/>
+- linear method   
+`=ee.INTERPOLATION1D(1.5, {1;2;3}, {10;20;50})`     
+`=ee.INTERPOLATION1D(1.5, B1:B3_excel Range, C1:C3_excel Range)`     
+`=15` get result  <br/>
+
+- cubic method   
+`=ee.INTERPOLATION1D(1.5, {1;2;3}, {10;20;50}, "cubic")`     
+`=ee.INTERPOLATION1D(1.5, B1:B3_excel Range, C1:C3_excel Range, "cubic")`     
+`=10` get result  <br/>
+
+<br />
+
