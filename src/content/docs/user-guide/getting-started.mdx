@@ -8,6 +8,8 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 import Button from '../../../components/Button.astro';
 import Discord from '../../../components/Discord.astro';
 
+import { Image } from 'astro:assets';
+
 {/* <Discord title="Have a question or want to get involved?" cta="Join our Discord"/> */}
 
 
@@ -64,8 +66,13 @@ Office Add-ins에서도 `Javascript API`를 사용하여 VBA와 유사한 기능
 엑셀 기본함수와 동일하게 함수입력창(fx)에 `=`를 입력하면 Custom Function을 사용할 수 있습니다. 사용하려는 함수명을 입력하면 사용가능한 함수 목록이 보입니다.
 예를 들어, `=air` 라고만 입력하더라도 함수명에 air를 포함하고 있으면 모두 표시가 됩니다.
 
-![](../../../assets/eefunction/230531_ee010InputFunction.jpg)    
+import image_ee010 from '../../../assets/eefunction/230531_ee010InputFunction.jpg';
+
+<Image src={image_ee010} alt="" width="500" />
+{/* ![](../../../assets/eefunction/230531_ee010InputFunction.jpg)   */}
+
 {/* <img src="../../../assets/eefunction/230531_ee010InputFunction.jpg" width="400" height="300" />     */}
+{/* <Image src={"../../../assets/eefunction/230531_ee010InputFunction.jpg"} alt="" width="400" height="300"/> */}
  
 <br/>
 <br/>
@@ -73,10 +80,14 @@ Office Add-ins에서도 `Javascript API`를 사용하여 VBA와 유사한 기능
 <br/>
 <br/>
    
-자동완성 기능 활용하면 함수명을 모두 입력하지 않고 손쉽게 사용할 수 있습니다. 위에서 `=air` 라고 입력한 상태에서 방향키 위/아래로 사용하려는 함수를 선택합니다. 그리고 `TAB`키를 누르면 나머지 부분이 완성됩니다.
+함수자동완성 기능을 활용하면 함수명을 모두 입력하지 않고도 빠르게 입력할 수 있습니다. 위에서 `=air` 라고 입력한 상태에서 방향키 위/아래로 사용하려는 함수를 선택합니다. 그리고 `TAB`키를 누르면 나머지 부분이 완성됩니다.
 
-![](../../../assets/eefunction/230531_ee011InputFunction.jpg)    
-<img src="../../../assets/eefunction/230531_ee011InputFunction.jpg" width="300" height="300" />
+{/* <img src="../../../assets/eefunction/230531_ee011InputFunction.jpg" width="300" height="300" /> */}
+{/* ![](../../../assets/eefunction/230531_ee011InputFunction.jpg)     */}
+
+import image_ee011 from '../../../assets/eefunction/230531_ee011InputFunction.jpg';
+
+<Image src={image_ee011} alt="" width="350" />
 
 <br/>
 <br/>
