@@ -8,6 +8,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'eeFunction Docs',
+			customCss: [
+				// Path to your custom CSS file
+				'./src/styles/table.css',
+			],
 		logo: {
 			// src: './src/assets/favicon_taeg_yellow.svg',
 			src: './src/assets/icon_eefunction.png',
