@@ -13,7 +13,7 @@ export default defineConfig({
 			src: './src/assets/icon_eefunction.png',
 		},
 			social: {
-				email: 'https://eefunction-doc.pages.dev',
+				email: 'https://github.com/theangkko/eefunction-doc/issues' ,
 			},
 			sidebar: [
 				// { label: 'Home', link: '/' },
