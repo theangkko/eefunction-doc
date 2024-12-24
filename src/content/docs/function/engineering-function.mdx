@@ -27,8 +27,9 @@ Input as 150 deg.C Temperature, 60% Relative Humid Ratio, and Ambient Pressure, 
 
 <br />
 
-## Compressible Gas - GERG2008
-=ee.Gas_xxx()
+## Compressible Gas 
+### GERG2008 - Gas Property
+=ee.GASxxx()
 
 ex) Get Denity with (Dry Temperature, Relative Humid Ratio and Ambient Pressure) <br/>
 `=ee.GASRHO_PT()`
@@ -37,6 +38,16 @@ Input as 2 bara, 35 deg.C Temperature with FluidName<br/>
 `=ee.GASRHO_PT(2, 35, Methane[0.6]&Ethane[0.4])`     
 `=ee.GASRHO_PT(2, 35, B3_excel Range)`     
 `=1.70111` kg/m3 density of Gas  <br/>
+
+### ISO 6976 - Natural Gas Heating Value
+=ee.GASxxx()
+
+ex) Get LHV Lower Heating Value_kJ/kg (option with temperature) <br/>
+`=ee.GASLHVMASS()`
+
+Input with FluidName <br/>
+`=ee.GASLHVMASS(Methane[0.6]&Ethane[0.4])`    
+`=48630.14` kJ/kg as LHV of Gas <br/>
 
 <br />
 

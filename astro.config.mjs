@@ -23,6 +23,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Getting Started', link: '/user-guide/getting-started/' },
 						{ label: 'Installation', link: '/user-guide/installation/' },
+						{ label: 'Developer Blog', link: '/user-guide/developer-blog/' },
 						{ label: 'Privacy Policy', link: '/user-guide/privacy-policy/' },
 					],
 				},
