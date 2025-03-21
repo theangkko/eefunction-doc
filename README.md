@@ -1,3 +1,8 @@
+## cloudflare AUTO build
+- after adding commit on github 
+- and cloud run 'npm run build' automatically and deploy to cloudflare "eefunction-doc.pages.dev"
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
