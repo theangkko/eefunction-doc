@@ -14,11 +14,13 @@ export default defineConfig({
 			],
 		logo: {
 			// src: './src/assets/favicon_taeg_yellow.svg',
-			src: './src/assets/icon_eefunction.png',
-		},
-			social: {
-				email: 'https://github.com/theangkko/eefunction-doc/issues' ,
-			},
+			src: './src/assets/icon_eefunction.png',		},			social: [
+				{
+					icon: 'github',
+					label: 'Issues',
+					href: 'https://github.com/theangkko/eefunction-doc/issues'
+				}
+			],
 			sidebar: [
 				// { label: 'Home', link: '/' },
 				{
