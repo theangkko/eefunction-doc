@@ -1,0 +1,27 @@
+---
+title: Steam_Water - IF97
+description: A reference page.
+---
+
+IF97 Steam Table은 다음 코드를 사용합니다
+- <a href="https://github.com/kpatvt/xsteam2" target="_blank" rel="noopener noreferrer">xsteam2</a> by kpatvt
+
+Javascript로 계산되는 항목은 xsteam2 모듈을 사용합니다.
+
+{/* *[CoolProp.org](http://www.coolprop.org/)를 통해 값을 얻을 수도 있습니다.*  */}
+
+**Steam function UNIT**
+
+import TableSteamWater from 'TableSteamWater.astro';
+
+<TableSteamWater />
+
+<br />
+
+_**Surface tension** IAPWS Release on Surface tension of Ordinary Water Substance, September 1994_
+
+_**Vapor volume fraction** Observe that Vapor volume fraction is very sensitive. Vapor volume is about 1000 times greater than liquid volume and therefore Vapor volume fraction gets close to the accuracy of steam IF-97_
+
+_**Thermal Conductivity** Revised release on the IAPS Formulation 1985 for the Thermal Conductivity of ordinary water substance (IAPWS 1998)_
+
+_**Dynamic Viscosity** Viscosity is not part of IAPWS Steam IF97. Equations from "Revised Release on the IAPWS Formulation 1985 for the Viscosity of Ordinary Water Substance", 2003 are used. Viscosity in the mixed region (4) is interpolated according to the density. This is not true since it will be two fases._

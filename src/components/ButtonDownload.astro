@@ -1,0 +1,51 @@
+<button manifest-download>Download Manifest</button>
+
+<!-- <button manifest-download> DOWNLOAD </button> -->
+
+<script>
+  // Import npm modules.
+
+  // Find our component DOM on the page.
+  //   const buttons = document.querySelectorAll('[manifest-download]');
+
+  // Add event listeners to fire confetti when a button is clicked.
+  //   buttons.forEach((button) => {
+  //     button.addEventListener('click', () => console.log("print"));
+  //   });
+
+  // var hwtop = document.getElementById('hwtop');
+  const buttons = document.querySelectorAll("[manifest-download]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Usage: Call the `downloadRawFile` function with the raw file URL
+      const rawFileUrl = "https://eefunction.pages.dev/manifest_eeFunction.xml";
+      downloadRawFile(rawFileUrl);
+    });
+  });
+
+  function downloadRawFile(url) {
+    fetch(url)
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Create a temporary link element
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = getFileNameFromUrl(url);
+
+        // Simulate a click on the link element to trigger the download
+        link.click();
+
+        // Clean up the temporary link
+        URL.revokeObjectURL(link.href);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+
+  function getFileNameFromUrl(url) {
+    // Extract the file name from the URL
+    const parts = url.split("/");
+    return parts[parts.length - 1];
+  }
+</script>

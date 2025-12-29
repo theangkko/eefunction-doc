@@ -1,0 +1,149 @@
+---
+const gasData = [
+  {
+    abbr: 'GasRHO_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'kg/m3',
+    description: 'Get Density at pressure & Temperature'
+  },
+  {
+    abbr: 'GasMM_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'g/mol',
+    description: 'Get Molar Mass at pressure & Temperature'
+  },
+  {
+    abbr: 'GasZ_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: '-',
+    description: 'Get Compressibility at pressure & Temperature'
+  },
+  {
+    abbr: 'GasCV_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'J/(mol-K)',
+    description: 'Get Isochoric Heat Capacity at pressure & Temperature'
+  },
+  {
+    abbr: 'GasCP_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'J/(mol-K)',
+    description: 'Get Isobaric Heat Capacity at pressure & Temperature'
+  },
+  {
+    abbr: 'GasJT_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'K/kPa',
+    description: 'Get Joule Thomson at pressure & Temperature'
+  },
+  {
+    abbr: 'GasW_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: 'm/s',
+    description: 'Get Speed of Sound at pressure & Temperature'
+  },
+  {
+    abbr: 'GasK_PT',
+    inputs: ['pressure, bara', 'temperature, °C', 'fluid name'],
+    result: '-',
+    description: 'Get Isentropic exponent at pressure & Temperature'
+  },
+  {
+    abbr: 'GasLHVmass',
+    inputs: ['fluid name', '[temperature, °C]'],
+    result: 'kJ/kg',
+    description: 'Get Lower Heating Value'
+  },
+  {
+    abbr: 'GasHHVmass',
+    inputs: ['fluid name', '[temperature, °C]'],
+    result: 'kJ/kg',
+    description: 'Get Higher Heating Value'
+  }
+];
+---
+
+<div class="gas-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Abbr.</th>
+        <th>INPUT Unit</th>
+        <th>RESULT Unit</th>
+        <th>Function Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {gasData.map((item) => (
+        <tr>
+          <td class="abbr">{item.abbr}</td>
+          <td class="inputs">
+            {item.inputs.map((input, index) => (
+              <>
+                {input}
+                {index < item.inputs.length - 1 && <br />}
+              </>
+            ))}
+          </td>
+          <td class="result">{item.result}</td>
+          <td class="description">{item.description}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .gas-table {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--sl-color-gray-5);
+  }
+
+  th {
+    background-color: var(--sl-color-gray-6);
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--sl-color-gray-1);
+  }
+
+  .abbr {
+    white-space: nowrap;
+  }
+
+  .inputs {
+    min-width: 200px;
+  }
+
+  .result {
+    white-space: nowrap;
+  }
+
+  .description {
+    min-width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.8rem;
+    }
+
+    th, td {
+      padding: 0.5rem;
+    }
+  }
+</style>

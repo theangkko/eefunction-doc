@@ -1,0 +1,66 @@
+---
+title: Installation
+description: 설치하는 방법을 설명합니다.
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import ButtonDownload from '../../../components/ButtonDownload.astro';
+
+
+{/* https://go.microsoft.com/fwlink/?linkid={{linkId}}&templateid={{addInId}}&templatetitle={{addInName}} */}
+{/* https://go.microsoft.com/fwlink/?linkid=2261819&templateid=WA200007295&templatetitle=eeFunction */}
+{/* ms-excel:https://api.addins.store.office.com/addinstemplate/en-US/28baf52b-a8c6-243e-b16a-7b8419599868/WA200007295/none/eeFunction.xlsx?omexsrctype=1  */}
+
+
+
+다음 링크를 통해 간편하게 설치가능합니다.    
+  <a href="https://go.microsoft.com/fwlink/?linkid=2261819&templateid=WA200007295&templatetitle=eeFunction" target="_blank">Install with Web-Browser</a>   <br />
+  <a href="ms-excel:https://api.addins.store.office.com/addinstemplate/en-US/28baf52b-a8c6-243e-b16a-7b8419599868/WA200007295/none/eeFunction.xlsx?omexsrctype=1" target="_blank">Install with Desktop PC</a>
+  <br />
+  <br />
+  <br />
+
+
+그 외 설치하는 방법은 아래 방법이 있습니다.
+- MS AppSouce에서 추가하기
+- Excel Add-ins에서 검색으로 추가하기
+
+
+### Using Microsoft AppSource
+
+- MS AppSource URL 주소로 이동합니다.  <a href="https://appsource.microsoft.com/en-us/product/office/WA200007295?tab=Overview" target="_blank"> LINK </a>
+- `Get it Now`버튼을 눌러 Office Add-ins을 추가합니다.
+- Office365(excel)에 Log-in 상태가 아니라면 Log-in 과정을 거칩니다.
+- 정상적으로 설치가 되면, 상단 메뉴에 `eeFunction` 메뉴가 생성됩니다.
+
+![Web-Excel](../../../assets/eefunction/Screenshot_appsource_url02.png)
+{/* ![Web-Excel](../../../assets/eefunction/Screenshot_appsource_url03.png) */}
+
+
+<br/><br/>
+
+
+### Using Add-ins Menu in excel
+- Excel에서 Home > Add-ins 메뉴를 선택합니다.
+![Web-Excel](../../../assets/eefunction/Screenshot_ExcelAddin_Menu_for_search00.png)
+
+<br/>
+- Offce Add-ins 검색메뉴에서 `eeFunction`을 검색합니다.
+![Web-Excel](../../../assets/eefunction/Screenshot_ExcelAddin_Menu_for_search01.png)
+
+<br/>
+- 검색에 표시되는 Add-ins을 `추가`버튼을 눌러 설치합니다.
+![Web-Excel](../../../assets/eefunction/Screenshot_ExcelAddin_Menu_for_search02.png)
+
+<br/><br/>
+
+### For Desktop App-Excel, only some functions are available
+기본적으로 Office Add-ins은 Web/Desktop 구분없이 사용가능합니다.    
+
+eeFunction에서 제공하는 일부 함수는 Web Assembly 기반으로 작성되어 있습니다.   
+이는 브라우저에서 동작하는 Web-Excel에서는 문제가 없지만 Desktop-Excel에서는 동작하지 않습니다.   
+예를 들어, `=ee.PROPSSI`의 CoolProp 명령어가 이에 해당합니다.   
+
+
+
+<br/><br/><br/><br/>
