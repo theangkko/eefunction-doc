@@ -51,6 +51,76 @@ Input with FluidName <br/>
 
 <br />
 
+## Fluid Composition Helper
+=ee.FluidString()
+
+ex) Create fluid composition string with {fluid names & fractions & ratio method} <br/>
+`=ee.FluidString()`
+
+Input fluid names and mole/mass fractions to create composition string for gas calculations <br/>
+`=ee.FluidString({Methane;Ethane;Propane}, {0.6;0.3;0.1}, "mol")`     
+`=Methane[0.6]&Ethane[0.3]&Propane[0.1]` composition string  <br/>
+
+Use this string directly in gas property functions <br/>
+`=ee.GASRHO_PT(2, 35, FluidString({Methane;Ethane}, {0.6;0.4}))`     
+
+**Note:** 
+- Default ratio method is "mol" (mole basis)
+- Can also use "mass" for mass basis
+- Can reference Excel ranges for names and fractions
+- Used with GERG2008 gas functions
+
+<br />
+
+## Seawater Properties - MIT Model
+=ee.SEAWTR_xxx()
+
+Seawater thermophysical properties based on MIT seawater property library.  
+All functions use Temperature (°C), Salinity (g/kg), and Pressure (bar.a) as inputs.
+
+ex) Get Seawater Density with {Temperature & Salinity & Pressure} <br/>
+`=ee.SEAWTR_DENSITY()`
+
+Input as 25°C, 35 g/kg salinity, 1.013 bara <br/>
+`=ee.SEAWTR_DENSITY(25, 35, 1.013)`     
+`=1023.34` kg/m3 density of seawater  <br/>
+
+ex) Get Seawater Enthalpy with {Temperature & Salinity & Pressure} <br/>
+`=ee.SEAWTR_ENTHALPY(25, 35, 1.013)`     
+`=102.23` kJ/kg enthalpy of seawater  <br/>
+
+ex) Get Seawater Specific Heat with {Temperature & Salinity & Pressure} <br/>
+`=ee.SEAWTR_SPCHEAT(25, 35, 1.013)`     
+`=3.99` kJ/kg-K specific heat  <br/>
+
+**Available Properties:**
+- `SEAWTR_DENSITY` - Density, kg/m3
+- `SEAWTR_ENTHALPY` - Enthalpy, kJ/kg
+- `SEAWTR_SPCHEAT` - Specific Heat, kJ/kg-K
+- `SEAWTR_CONDUCTIVITY` - Thermal Conductivity, W/m-K (temp, salinity)
+- `SEAWTR_VISCOSITY` - Dynamic Viscosity, Pa.s (temp, salinity)
+- `SEAWTR_PSAT` - Vapor Pressure, bar.a (temp, salinity)
+- `SEAWTR_VOLUME` - Specific Volume, m3/kg
+- `SEAWTR_LATENTHEAT` - Latent Heat of Vaporization, kJ/kg (temp, salinity)
+- `SEAWTR_BPE` - Boiling Point Elevation, K (temp, salinity)
+- `SEAWTR_ENTROPY` - Entropy, kJ/kg-K
+- `SEAWTR_GIBBS` - Gibbs Energy, kJ/kg
+- `SEAWTR_INTENERGY` - Internal Energy, kJ/kg
+- `SEAWTR_ISOBEXP` - Isobaric Thermal Expansivity, 1/K
+- `SEAWTR_ISOTHCOMP` - Isothermal Compressibility, 1/bar.a
+- `SEAWTR_KVISCOSITY` - Kinematic Viscosity, m2/s (temp, salinity)
+- `SEAWTR_OSMCOEFF` - Osmotic Coefficient, dimensionless (temp, salinity)
+- `SEAWTR_OSMPRESS` - Osmotic Pressure, bar.a (temp, salinity)
+- `SEAWTR_PRANDTL` - Prandtl Number, dimensionless (temp, salinity)
+- `SEAWTR_SURFACETENSION` - Surface Tension, mN/m (temp, salinity)
+
+**Typical Input Ranges:**
+- Temperature: 0 to 120°C
+- Salinity: 0 to 120 g/kg (seawater ~35 g/kg)
+- Pressure: 0 to 12 bar.a
+
+<br />
+
 ## Friction Factor of pipe
 =ee.FRICTIONFACTOR()
 
