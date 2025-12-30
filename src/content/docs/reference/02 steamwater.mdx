@@ -3,16 +3,16 @@ title: Steam_Water - IF97
 description: A reference page.
 ---
 
-IF97 Steam Table은 다음 코드를 사용합니다
+IF97 Steam Table uses the following code
 - <a href="https://github.com/kpatvt/xsteam2" target="_blank" rel="noopener noreferrer">xsteam2</a> by kpatvt
 
-Javascript로 계산되는 항목은 xsteam2 모듈을 사용합니다.
+Items calculated in Javascript use the xsteam2 module.
 
 {/* *[CoolProp.org](http://www.coolprop.org/)를 통해 값을 얻을 수도 있습니다.*  */}
 
 **Steam function UNIT**
 
-import TableSteamWater from 'TableSteamWater.astro';
+import TableSteamWater from './TableSteamWater.astro';
 
 <TableSteamWater />
 
@@ -25,3 +25,4 @@ _**Vapor volume fraction** Observe that Vapor volume fraction is very sensitive.
 _**Thermal Conductivity** Revised release on the IAPS Formulation 1985 for the Thermal Conductivity of ordinary water substance (IAPWS 1998)_
 
 _**Dynamic Viscosity** Viscosity is not part of IAPWS Steam IF97. Equations from "Revised Release on the IAPWS Formulation 1985 for the Viscosity of Ordinary Water Substance", 2003 are used. Viscosity in the mixed region (4) is interpolated according to the density. This is not true since it will be two fases._
+

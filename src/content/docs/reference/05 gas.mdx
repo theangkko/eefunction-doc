@@ -3,11 +3,11 @@ title: Gas - Compressible
 description: A reference page.
 ---
 
-Natural Gas, Nitrogen, Hydrogen 등의 압축성 기체의 물성을 계산하기 위해 다음 코드를 사용합니다:
+To calculate properties of compressible gases such as Natural Gas, Nitrogen, Hydrogen, etc., the following code is used:
 {/* - [GERG2008](https://github.com/TorrensJoaquin/GERG2008/) by TorrensJoaquin */}
 - <a href="https://github.com/TorrensJoaquin/GERG2008" target="_blank" rel="noopener noreferrer">GERG2008</a> by TorrensJoaquin
 
-GERG2008은 천연가스 및 기타 혼합가스의 물성을 계산하기 위한 국제 표준 방정식입니다. 이 모듈은 밀도, 압축계수, 엔탈피, 열용량 등 다양한 열역학적 물성을 계산할 수 있으며, 특히 천연가스, 수소, 질소와 같은 산업용 가스의 정확한 물성 계산에 적합합니다.
+GERG2008 is an international standard equation for calculating properties of natural gas and other gas mixtures. This module can calculate various thermodynamic properties such as density, compression factor, enthalpy, and heat capacity, and is particularly suitable for accurate property calculations of industrial gases such as natural gas, hydrogen, and nitrogen.
 
 **Operating Ranges**
 - Pressure: 0 to 350 bara
@@ -33,3 +33,4 @@ import TableGas from './TableGas.astro';
 - Temperature is optional parameter for LHV and HHV calculations
 - Temperature defaults to 25°C if not provided for LHV and HHV
 - Temperature must be provided for all other functions
+

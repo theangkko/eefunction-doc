@@ -1,0 +1,35 @@
+---
+title: Gas - Compressible
+description: A reference page.
+---
+
+Natural Gas, Nitrogen, Hydrogen 등의 압축성 기체의 물성을 계산하기 위해 다음 코드를 사용합니다:
+{/* - [GERG2008](https://github.com/TorrensJoaquin/GERG2008/) by TorrensJoaquin */}
+- <a href="https://github.com/TorrensJoaquin/GERG2008" target="_blank" rel="noopener noreferrer">GERG2008</a> by TorrensJoaquin
+
+GERG2008은 천연가스 및 기타 혼합가스의 물성을 계산하기 위한 국제 표준 방정식입니다. 이 모듈은 밀도, 압축계수, 엔탈피, 열용량 등 다양한 열역학적 물성을 계산할 수 있으며, 특히 천연가스, 수소, 질소와 같은 산업용 가스의 정확한 물성 계산에 적합합니다.
+
+**Operating Ranges**
+- Pressure: 0 to 350 bara
+- Temperature: -183°C to 277°C
+- Valid ranges may vary depending on the gas mixture composition
+
+**Gas Functions**
+
+import TableGas from '../../reference/TableGas.astro';
+
+<TableGas />
+
+**Fluid Name Format**
+- The fluid name should be provided as a string specifying the gas mixture composition
+- Example format: "CH4:0.94,C2H6:0.05,CO2:0.01" represents a mixture of:
+  - 94% Methane (CH4)
+  - 5% Ethane (C2H6)
+  - 1% Carbon Dioxide (CO2)
+- Components must sum to 1.0 (100%)
+- Supported components include: CH4 (Methane), C2H6 (Ethane), C3H8 (Propane), N2 (Nitrogen), CO2 (Carbon Dioxide), and others per GERG2008 standard
+
+**Notes**
+- Temperature is optional parameter for LHV and HHV calculations
+- Temperature defaults to 25°C if not provided for LHV and HHV
+- Temperature must be provided for all other functions

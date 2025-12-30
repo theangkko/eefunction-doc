@@ -13,9 +13,9 @@ import { Image } from 'astro:assets';
 {/* <Discord title="Have a question or want to get involved?" cta="Join our Discord"/> */}
 
 
-`eeFunction`은 Fluid mechanics, Thermodynamics을 위한 Excel Addin 입니다.
-인터넷에 공유된 source code를 기반으로 엑셀에서의 다양한 -사용자함수-를 제공합니다.    
-개인/기업에서 무료Free로 사용할 수 있습니다.
+`eeFunction` is an Excel Add-in for Fluid mechanics and Thermodynamics.
+Based on source code shared on the internet, it provides various user-defined functions in Excel.
+It is free to use for both personal and corporate purposes.
 
 
 {/* <LinkCard
@@ -29,10 +29,10 @@ import { Image } from 'astro:assets';
 <br/><br/>
 
 
-### Office Add-ins 사용환경
+### Office Add-ins Usage Environment
 
-Office Add-ins의 기능은 Microsoft 홈페이지에 표기된 사양에 따라 ~~엑셀2016버전~~ __엑셀2021__ 이상에서 실행가능합니다.   
-또한 맥Mac, Office365-Web버전에서도 사용가능합니다
+According to the specifications listed on the Microsoft homepage, Office Add-ins functionality is available on ~~Excel 2016~~ __Excel 2021__ and later versions.
+It is also available on Mac and Office 365 Web versions.
 
 
 > Note that Excel custom functions are available on the following platforms.
@@ -51,11 +51,11 @@ Office Add-ins의 기능은 Microsoft 홈페이지에 표기된 사양에 따라
 <br/> 
 
 
-### How to use 사용방법
-엑셀 기본함수 외에, 추가로 사용자함수(UDF)를 쓰려면 VBA을 사용합니다.
-Office Add-ins에서도 `Javascript API`를 사용하여 VBA와 유사한 기능을 제공합니다. 이를 **Custom Function**이라고 하며, eeFunction은 이러한 기능의 집합입니다.
+### How to Use
+In addition to Excel's built-in functions, you need to use VBA to add user-defined functions (UDF).
+Office Add-ins also provide functionality similar to VBA using the `Javascript API`. This is called **Custom Functions**, and eeFunction is a collection of such functions.
 
-간단한 사용법은 아래 영상을 참고하십시오.
+For simple usage instructions, please refer to the video below.
 
 ![](https://learn.microsoft.com/en-us/office/dev/add-ins/images/spherevolumenew.gif)
 
@@ -63,8 +63,8 @@ Office Add-ins에서도 `Javascript API`를 사용하여 VBA와 유사한 기능
 <br/>
 <br/>
    
-엑셀 기본함수와 동일하게 함수입력창(fx)에 `=`를 입력하면 Custom Function을 사용할 수 있습니다. 사용하려는 함수명을 입력하면 사용가능한 함수 목록이 보입니다.
-예를 들어, `=air` 라고만 입력하더라도 함수명에 air를 포함하고 있으면 모두 표시가 됩니다.
+Just like Excel's built-in functions, you can use Custom Functions by entering `=` in the function input box (fx). When you start typing the function name, you'll see a list of available functions.
+For example, even if you just type `=air`, all functions that include "air" in their name will be displayed.
 
 import image_ee010 from '../../../assets/eefunction/230531_ee010InputFunction.jpg';
 
@@ -80,10 +80,10 @@ import image_ee010 from '../../../assets/eefunction/230531_ee010InputFunction.jp
 <br/>
 <br/>
    
-함수자동완성 기능을 활용하면 함수명을 모두 입력하지 않고도 빠르게 입력할 수 있습니다. 위에서 `=air` 라고 입력한 상태에서 방향키 위/아래로 사용하려는 함수를 선택합니다. 그리고 `TAB`키를 누르면 나머지 부분이 완성됩니다.
+Using the function auto-complete feature, you can quickly enter functions without typing the entire function name. After typing `=air`, select the function you want to use with the up/down arrow keys. Then press the `TAB` key to complete the rest.
 
-{/* <img src="../../../assets/eefunction/230531_ee011InputFunction.jpg" width="300" height="300" /> */}
-{/* ![](../../../assets/eefunction/230531_ee011InputFunction.jpg)     */}
+{/* <img src="../../../../assets/eefunction/230531_ee011InputFunction.jpg" width="300" height="300" /> */}
+{/* ![](../../../../assets/eefunction/230531_ee011InputFunction.jpg)     */}
 
 import image_ee011 from '../../../assets/eefunction/230531_ee011InputFunction.jpg';
 
@@ -95,10 +95,10 @@ import image_ee011 from '../../../assets/eefunction/230531_ee011InputFunction.jp
 <br/>
 
 
-eeFunction에서 사용가능한 **모든 함수**의 목록을 보려면 `=ee.`를 입력합니다.   
+To see a list of **all available functions** in eeFunction, type `=ee.`.   
 
-{/* ![](../../../assets/eefunction/230531_ee012InputFunction.jpg)    */}
-{/* <img src="../../../assets/eefunction/230531_ee012InputFunction.jpg" width="500px" height="300px" /> */}
+{/* ![](../../../../assets/eefunction/230531_ee012InputFunction.jpg)    */}
+{/* <img src="../../../../assets/eefunction/230531_ee012InputFunction.jpg" width="500px" height="300px" /> */}
 
 import image_ee012 from '../../../assets/eefunction/230531_ee012InputFunction.jpg';
 
@@ -108,10 +108,10 @@ import image_ee012 from '../../../assets/eefunction/230531_ee012InputFunction.jp
 <br/>
 <br/>
 
-상세한 설명과 도움말을 보려면 함수입력창의 (fx)를 클릭하고 -범주선택-에서 **eeFunction**을 선택하면 함수목록과 각 함수의 상세설명을 볼 수 있습니다. 
+To view detailed descriptions and help, click (fx) in the function input box and select **eeFunction** from the category selection to see the function list and detailed descriptions of each function.
 
 ![](../../../assets/eefunction/230531_ee013InputFunction.jpg)  
-{/* <img src="../../../assets/eefunction/230531_ee013InputFunction.jpg" width="500px" height="300px" /> */}
+{/* <img src="../../../../assets/eefunction/230531_ee013InputFunction.jpg" width="500px" height="300px" /> */}
 
 
 <br/>
