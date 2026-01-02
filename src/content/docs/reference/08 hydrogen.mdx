@@ -1,0 +1,131 @@
+---
+title: Hydrogen
+description: A reference page.
+---
+
+**Hydrogen function UNIT**
+
+Notes
+- Pressure: bara (absolute)
+- Temperature: °C
+- Enthalpy: kJ/kg
+- Entropy: kJ/(kgK)
+- Density: kg/m3, Specific volume: m3/kg
+
+### Temperature
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogenTsat_p | Pressure, bara | °C | Saturation temperature as a function of pressure |
+| HydrogenT_ph | Pressure, bara<br />Enthalpy, kJ/kg | °C | Temperature as a function of pressure and enthalpy |
+| HydrogenT_ps | Pressure, bara<br />Entropy, kJ/(kgK) | °C | Temperature as a function of pressure and entropy |
+| HydrogenT_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | °C | Temperature as a function of enthalpy and entropy |
+
+### Pressure
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| Hydrogenpsat_T | Temperature, °C | bara | Saturation pressure as a function of temperature |
+| Hydrogenp_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | bara | Pressure as a function of enthalpy and entropy |
+| Hydrogenp_hrho | Enthalpy, kJ/kg<br />Density, kg/m3 | bara | Pressure as a function of enthalpy and density |
+
+### Enthalpy
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogenhV_p | Pressure, bara | kJ/kg | Saturated vapor enthalpy |
+| HydrogenhL_p | Pressure, bara | kJ/kg | Saturated liquid enthalpy |
+| HydrogenhV_T | Temperature, °C | kJ/kg | Saturated vapor enthalpy |
+| HydrogenhL_T | Temperature, °C | kJ/kg | Saturated liquid enthalpy |
+| Hydrogenh_pT | Pressure, bara<br />Temperature, °C | kJ/kg | Enthalpy as a function of pressure and temperature |
+| Hydrogenh_ps | Pressure, bara<br />Entropy, kJ/(kgK) | kJ/kg | Enthalpy as a function of pressure and entropy |
+| Hydrogenh_px | Pressure, bara<br />Vapor fraction (quality) | kJ/kg | Enthalpy as a function of pressure and vapor fraction |
+| Hydrogenh_Tx | Temperature, °C<br />Vapor fraction (quality) | kJ/kg | Enthalpy as a function of temperature and vapor fraction |
+| Hydrogenh_prho | Pressure, bara<br />Density, kg/m3 | kJ/kg | Enthalpy as a function of pressure and density |
+
+### Specific Volume
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogenvV_p | Pressure, bara | m3/kg | Saturated vapor specific volume |
+| HydrogenvL_p | Pressure, bara | m3/kg | Saturated liquid specific volume |
+| HydrogenvV_T | Temperature, °C | m3/kg | Saturated vapor specific volume |
+| HydrogenvL_T | Temperature, °C | m3/kg | Saturated liquid specific volume |
+| Hydrogenv_pT | Pressure, bara<br />Temperature, °C | m3/kg | Specific volume as a function of pressure and temperature |
+| Hydrogenv_ph | Pressure, bara<br />Enthalpy, kJ/kg | m3/kg | Specific volume as a function of pressure and enthalpy |
+| Hydrogenv_ps | Pressure, bara<br />Entropy, kJ/(kgK) | m3/kg | Specific volume as a function of pressure and entropy |
+
+### Density
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogenrhoV_p | Pressure, bara | kg/m3 | Saturated vapor density |
+| HydrogenrhoL_p | Pressure, bara | kg/m3 | Saturated liquid density |
+| HydrogenrhoV_T | Temperature, °C | kg/m3 | Saturated vapor density |
+| HydrogenrhoL_T | Temperature, °C | kg/m3 | Saturated liquid density |
+| Hydrogenrho_pT | Pressure, bara<br />Temperature, °C | kg/m3 | Density as a function of pressure and temperature |
+| Hydrogenrho_ph | Pressure, bara<br />Enthalpy, kJ/kg | kg/m3 | Density as a function of pressure and enthalpy |
+| Hydrogenrho_ps | Pressure, bara<br />Entropy, kJ/(kgK) | kg/m3 | Density as a function of pressure and entropy |
+
+### Entropy
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogensV_p | Pressure, bara | kJ/(kgK) | Saturated vapor entropy |
+| HydrogensL_p | Pressure, bara | kJ/(kgK) | Saturated liquid entropy |
+| HydrogensV_T | Temperature, °C | kJ/(kgK) | Saturated vapor entropy |
+| HydrogensL_T | Temperature, °C | kJ/(kgK) | Saturated liquid entropy |
+| Hydrogens_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific entropy as a function of pressure and temperature |
+| Hydrogens_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific entropy as a function of pressure and enthalpy |
+
+### Heat Capacity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogenCpV_p | Pressure, bara | kJ/(kgK) | Saturated vapor heat capacity |
+| HydrogenCpL_p | Pressure, bara | kJ/(kgK) | Saturated liquid heat capacity |
+| HydrogenCpV_T | Temperature, °C | kJ/(kgK) | Saturated vapor heat capacity |
+| HydrogenCpL_T | Temperature, °C | kJ/(kgK) | Saturated liquid heat capacity |
+| HydrogenCp_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific isobaric heat capacity as a function of pressure and temperature |
+| HydrogenCp_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific isobaric heat capacity as a function of pressure and enthalpy |
+| HydrogenCvV_p | Pressure, bara | kJ/(kgK) | Saturated vapor isochoric heat capacity |
+| HydrogenCvL_p | Pressure, bara | kJ/(kgK) | Saturated liquid isochoric heat capacity |
+| HydrogenCvV_T | Temperature, °C | kJ/(kgK) | Saturated vapor isochoric heat capacity |
+| HydrogenCvL_T | Temperature, °C | kJ/(kgK) | Saturated liquid isochoric heat capacity |
+| HydrogenCv_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific isochoric heat capacity as a function of pressure and temperature |
+| HydrogenCv_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific isochoric heat capacity as a function of pressure and enthalpy |
+
+### Speed of Sound
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| Hydrogenw_pT | Pressure, bara<br />Temperature, °C | m/s | Speed of sound as a function of pressure and temperature |
+| Hydrogenw_ph | Pressure, bara<br />Enthalpy, kJ/kg | m/s | Speed of sound as a function of pressure and enthalpy |
+| Hydrogenw_ps | Pressure, bara<br />Entropy, kJ/(kgK) | m/s | Speed of sound as a function of pressure and entropy |
+
+### Viscosity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| Hydrogenmy_pT | Pressure, bara<br />Temperature, °C | Pa·s | Viscosity as a function of pressure and temperature |
+| Hydrogenmy_ph | Pressure, bara<br />Enthalpy, kJ/kg | Pa·s | Viscosity as a function of pressure and enthalpy |
+| Hydrogenmy_ps | Pressure, bara<br />Entropy, kJ/(kgK) | Pa·s | Viscosity as a function of pressure and entropy |
+
+### Thermal Conductivity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| HydrogentcL_p | Pressure, bara | W/(mK) | Saturated liquid thermal conductivity |
+| HydrogentcV_p | Pressure, bara | W/(mK) | Saturated vapor thermal conductivity |
+| HydrogentcL_T | Temperature, °C | W/(mK) | Saturated liquid thermal conductivity |
+| HydrogentcV_T | Temperature, °C | W/(mK) | Saturated vapor thermal conductivity |
+| Hydrogentc_pT | Pressure, bara<br />Temperature, °C | W/(mK) | Thermal conductivity as a function of pressure and temperature |
+| Hydrogentc_ph | Pressure, bara<br />Enthalpy, kJ/kg | W/(mK) | Thermal conductivity as a function of pressure and enthalpy |
+| Hydrogentc_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | W/(mK) | Thermal conductivity as a function of enthalpy and entropy |
+
+### Surface Tension
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| Hydrogenstvap_T | Temperature, °C | N/m | Surface tension as a function of temperature |
+| Hydrogenstvap_p | Pressure, bara | N/m | Surface tension as a function of pressure |

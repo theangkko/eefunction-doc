@@ -1,0 +1,131 @@
+---
+title: Ammonia
+description: A reference page.
+---
+
+**Ammonia function UNIT**
+
+Notes
+- Pressure: bara (absolute)
+- Temperature: °C
+- Enthalpy: kJ/kg
+- Entropy: kJ/(kgK)
+- Density: kg/m3, Specific volume: m3/kg
+
+### Temperature
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3Tsat_p | Pressure, bara | °C | Saturation temperature as a function of pressure |
+| NH3T_ph | Pressure, bara<br />Enthalpy, kJ/kg | °C | Temperature as a function of pressure and enthalpy |
+| NH3T_ps | Pressure, bara<br />Entropy, kJ/(kgK) | °C | Temperature as a function of pressure and entropy |
+| NH3T_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | °C | Temperature as a function of enthalpy and entropy |
+
+### Pressure
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3psat_T | Temperature, °C | bara | Saturation pressure as a function of temperature |
+| NH3p_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | bara | Pressure as a function of enthalpy and entropy |
+| NH3p_hrho | Enthalpy, kJ/kg<br />Density, kg/m3 | bara | Pressure as a function of enthalpy and density |
+
+### Enthalpy
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3hV_p | Pressure, bara | kJ/kg | Saturated vapor enthalpy |
+| NH3hL_p | Pressure, bara | kJ/kg | Saturated liquid enthalpy |
+| NH3hV_T | Temperature, °C | kJ/kg | Saturated vapor enthalpy |
+| NH3hL_T | Temperature, °C | kJ/kg | Saturated liquid enthalpy |
+| NH3h_pT | Pressure, bara<br />Temperature, °C | kJ/kg | Enthalpy as a function of pressure and temperature |
+| NH3h_ps | Pressure, bara<br />Entropy, kJ/(kgK) | kJ/kg | Enthalpy as a function of pressure and entropy |
+| NH3h_px | Pressure, bara<br />Vapor fraction (quality) | kJ/kg | Enthalpy as a function of pressure and vapor fraction |
+| NH3h_Tx | Temperature, °C<br />Vapor fraction (quality) | kJ/kg | Enthalpy as a function of temperature and vapor fraction |
+| NH3h_prho | Pressure, bara<br />Density, kg/m3 | kJ/kg | Enthalpy as a function of pressure and density |
+
+### Specific Volume
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3vV_p | Pressure, bara | m3/kg | Saturated vapor specific volume |
+| NH3vL_p | Pressure, bara | m3/kg | Saturated liquid specific volume |
+| NH3vV_T | Temperature, °C | m3/kg | Saturated vapor specific volume |
+| NH3vL_T | Temperature, °C | m3/kg | Saturated liquid specific volume |
+| NH3v_pT | Pressure, bara<br />Temperature, °C | m3/kg | Specific volume as a function of pressure and temperature |
+| NH3v_ph | Pressure, bara<br />Enthalpy, kJ/kg | m3/kg | Specific volume as a function of pressure and enthalpy |
+| NH3v_ps | Pressure, bara<br />Entropy, kJ/(kgK) | m3/kg | Specific volume as a function of pressure and entropy |
+
+### Density
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3rhoV_p | Pressure, bara | kg/m3 | Saturated vapor density |
+| NH3rhoL_p | Pressure, bara | kg/m3 | Saturated liquid density |
+| NH3rhoV_T | Temperature, °C | kg/m3 | Saturated vapor density |
+| NH3rhoL_T | Temperature, °C | kg/m3 | Saturated liquid density |
+| NH3rho_pT | Pressure, bara<br />Temperature, °C | kg/m3 | Density as a function of pressure and temperature |
+| NH3rho_ph | Pressure, bara<br />Enthalpy, kJ/kg | kg/m3 | Density as a function of pressure and enthalpy |
+| NH3rho_ps | Pressure, bara<br />Entropy, kJ/(kgK) | kg/m3 | Density as a function of pressure and entropy |
+
+### Entropy
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3sV_p | Pressure, bara | kJ/(kgK) | Saturated vapor entropy |
+| NH3sL_p | Pressure, bara | kJ/(kgK) | Saturated liquid entropy |
+| NH3sV_T | Temperature, °C | kJ/(kgK) | Saturated vapor entropy |
+| NH3sL_T | Temperature, °C | kJ/(kgK) | Saturated liquid entropy |
+| NH3s_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific entropy as a function of pressure and temperature |
+| NH3s_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific entropy as a function of pressure and enthalpy |
+
+### Heat Capacity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3CpV_p | Pressure, bara | kJ/(kgK) | Saturated vapor heat capacity |
+| NH3CpL_p | Pressure, bara | kJ/(kgK) | Saturated liquid heat capacity |
+| NH3CpV_T | Temperature, °C | kJ/(kgK) | Saturated vapor heat capacity |
+| NH3CpL_T | Temperature, °C | kJ/(kgK) | Saturated liquid heat capacity |
+| NH3Cp_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific isobaric heat capacity as a function of pressure and temperature |
+| NH3Cp_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific isobaric heat capacity as a function of pressure and enthalpy |
+| NH3CvV_p | Pressure, bara | kJ/(kgK) | Saturated vapor isochoric heat capacity |
+| NH3CvL_p | Pressure, bara | kJ/(kgK) | Saturated liquid isochoric heat capacity |
+| NH3CvV_T | Temperature, °C | kJ/(kgK) | Saturated vapor isochoric heat capacity |
+| NH3CvL_T | Temperature, °C | kJ/(kgK) | Saturated liquid isochoric heat capacity |
+| NH3Cv_pT | Pressure, bara<br />Temperature, °C | kJ/(kgK) | Specific isochoric heat capacity as a function of pressure and temperature |
+| NH3Cv_ph | Pressure, bara<br />Enthalpy, kJ/kg | kJ/(kgK) | Specific isochoric heat capacity as a function of pressure and enthalpy |
+
+### Speed of Sound
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3w_pT | Pressure, bara<br />Temperature, °C | m/s | Speed of sound as a function of pressure and temperature |
+| NH3w_ph | Pressure, bara<br />Enthalpy, kJ/kg | m/s | Speed of sound as a function of pressure and enthalpy |
+| NH3w_ps | Pressure, bara<br />Entropy, kJ/(kgK) | m/s | Speed of sound as a function of pressure and entropy |
+
+### Viscosity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3my_pT | Pressure, bara<br />Temperature, °C | Pa·s | Viscosity as a function of pressure and temperature |
+| NH3my_ph | Pressure, bara<br />Enthalpy, kJ/kg | Pa·s | Viscosity as a function of pressure and enthalpy |
+| NH3my_ps | Pressure, bara<br />Entropy, kJ/(kgK) | Pa·s | Viscosity as a function of pressure and entropy |
+
+### Thermal Conductivity
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3tcL_p | Pressure, bara | W/(mK) | Saturated liquid thermal conductivity |
+| NH3tcV_p | Pressure, bara | W/(mK) | Saturated vapor thermal conductivity |
+| NH3tcL_T | Temperature, °C | W/(mK) | Saturated liquid thermal conductivity |
+| NH3tcV_T | Temperature, °C | W/(mK) | Saturated vapor thermal conductivity |
+| NH3tc_pT | Pressure, bara<br />Temperature, °C | W/(mK) | Thermal conductivity as a function of pressure and temperature |
+| NH3tc_ph | Pressure, bara<br />Enthalpy, kJ/kg | W/(mK) | Thermal conductivity as a function of pressure and enthalpy |
+| NH3tc_hs | Enthalpy, kJ/kg<br />Entropy, kJ/(kgK) | W/(mK) | Thermal conductivity as a function of enthalpy and entropy |
+
+### Surface Tension
+
+| Abbr. | INPUT Unit | RESULT Unit | Function Description |
+| --- | --- | --- | --- |
+| NH3stvap_T | Temperature, °C | N/m | Surface tension as a function of temperature |
+| NH3stvap_p | Pressure, bara | N/m | Surface tension as a function of pressure |
