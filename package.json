@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev --host 0.0.0.0 --port 4321",
-    "start": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 0.0.0.0 --port 4321",
+    "start": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev --host 0.0.0.0 --port 4321",
     "build": "astro build",
-    "preview": "astro preview  --host 0.0.0.0 --port 4321",
+    "preview": "astro preview --host 0.0.0.0 --port 4321",
     "astro": "astro"
   },
   "dependencies": {

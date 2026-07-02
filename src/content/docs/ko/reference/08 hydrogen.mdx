@@ -1,0 +1,131 @@
+---
+title: Hydrogen
+description: 수소 물성 함수 참조 페이지입니다.
+---
+
+**Hydrogen 함수 단위** <span style="color: red;">(WEB-EXCEL ONLY)</span>
+
+참고
+- 압력: bara (절대압)
+- 온도: °C
+- 엔탈피: kJ/kg
+- 엔트로피: kJ/(kgK)
+- 밀도: kg/m3, 비체적: m3/kg
+
+### 온도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogenTsat_p | 압력, bara | °C | 압력으로 포화온도를 계산합니다 |
+| HydrogenT_ph | 압력, bara<br />엔탈피, kJ/kg | °C | 압력과 엔탈피로 온도를 계산합니다 |
+| HydrogenT_ps | 압력, bara<br />엔트로피, kJ/(kgK) | °C | 압력과 엔트로피로 온도를 계산합니다 |
+| HydrogenT_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | °C | 엔탈피와 엔트로피로 온도를 계산합니다 |
+
+### 압력
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| Hydrogenpsat_T | 온도, °C | bara | 온도로 포화압력을 계산합니다 |
+| Hydrogenp_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | bara | 엔탈피와 엔트로피로 압력을 계산합니다 |
+| Hydrogenp_hrho | 엔탈피, kJ/kg<br />밀도, kg/m3 | bara | 엔탈피와 밀도로 압력을 계산합니다 |
+
+### 엔탈피
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogenhV_p | 압력, bara | kJ/kg | 포화증기 엔탈피 |
+| HydrogenhL_p | 압력, bara | kJ/kg | 포화액 엔탈피 |
+| HydrogenhV_T | 온도, °C | kJ/kg | 포화증기 엔탈피 |
+| HydrogenhL_T | 온도, °C | kJ/kg | 포화액 엔탈피 |
+| Hydrogenh_pT | 압력, bara<br />온도, °C | kJ/kg | 압력과 온도로 엔탈피를 계산합니다 |
+| Hydrogenh_ps | 압력, bara<br />엔트로피, kJ/(kgK) | kJ/kg | 압력과 엔트로피로 엔탈피를 계산합니다 |
+| Hydrogenh_px | 압력, bara<br />증기 건도 | kJ/kg | 압력과 증기 건도로 엔탈피를 계산합니다 |
+| Hydrogenh_Tx | 온도, °C<br />증기 건도 | kJ/kg | 온도와 증기 건도로 엔탈피를 계산합니다 |
+| Hydrogenh_prho | 압력, bara<br />밀도, kg/m3 | kJ/kg | 압력과 밀도로 엔탈피를 계산합니다 |
+
+### 비체적
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogenvV_p | 압력, bara | m3/kg | 포화증기 비체적 |
+| HydrogenvL_p | 압력, bara | m3/kg | 포화액 비체적 |
+| HydrogenvV_T | 온도, °C | m3/kg | 포화증기 비체적 |
+| HydrogenvL_T | 온도, °C | m3/kg | 포화액 비체적 |
+| Hydrogenv_pT | 압력, bara<br />온도, °C | m3/kg | 압력과 온도로 비체적을 계산합니다 |
+| Hydrogenv_ph | 압력, bara<br />엔탈피, kJ/kg | m3/kg | 압력과 엔탈피로 비체적을 계산합니다 |
+| Hydrogenv_ps | 압력, bara<br />엔트로피, kJ/(kgK) | m3/kg | 압력과 엔트로피로 비체적을 계산합니다 |
+
+### 밀도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogenrhoV_p | 압력, bara | kg/m3 | 포화증기 밀도 |
+| HydrogenrhoL_p | 압력, bara | kg/m3 | 포화액 밀도 |
+| HydrogenrhoV_T | 온도, °C | kg/m3 | 포화증기 밀도 |
+| HydrogenrhoL_T | 온도, °C | kg/m3 | 포화액 밀도 |
+| Hydrogenrho_pT | 압력, bara<br />온도, °C | kg/m3 | 압력과 온도로 밀도를 계산합니다 |
+| Hydrogenrho_ph | 압력, bara<br />엔탈피, kJ/kg | kg/m3 | 압력과 엔탈피로 밀도를 계산합니다 |
+| Hydrogenrho_ps | 압력, bara<br />엔트로피, kJ/(kgK) | kg/m3 | 압력과 엔트로피로 밀도를 계산합니다 |
+
+### 엔트로피
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogensV_p | 압력, bara | kJ/(kgK) | 포화증기 엔트로피 |
+| HydrogensL_p | 압력, bara | kJ/(kgK) | 포화액 엔트로피 |
+| HydrogensV_T | 온도, °C | kJ/(kgK) | 포화증기 엔트로피 |
+| HydrogensL_T | 온도, °C | kJ/(kgK) | 포화액 엔트로피 |
+| Hydrogens_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 비엔트로피를 계산합니다 |
+| Hydrogens_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 비엔트로피를 계산합니다 |
+
+### 열용량
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogenCpV_p | 압력, bara | kJ/(kgK) | 포화증기 정압비열 |
+| HydrogenCpL_p | 압력, bara | kJ/(kgK) | 포화액 정압비열 |
+| HydrogenCpV_T | 온도, °C | kJ/(kgK) | 포화증기 정압비열 |
+| HydrogenCpL_T | 온도, °C | kJ/(kgK) | 포화액 정압비열 |
+| HydrogenCp_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 정압비열을 계산합니다 |
+| HydrogenCp_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 정압비열을 계산합니다 |
+| HydrogenCvV_p | 압력, bara | kJ/(kgK) | 포화증기 정적비열 |
+| HydrogenCvL_p | 압력, bara | kJ/(kgK) | 포화액 정적비열 |
+| HydrogenCvV_T | 온도, °C | kJ/(kgK) | 포화증기 정적비열 |
+| HydrogenCvL_T | 온도, °C | kJ/(kgK) | 포화액 정적비열 |
+| HydrogenCv_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 정적비열을 계산합니다 |
+| HydrogenCv_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 정적비열을 계산합니다 |
+
+### 음속
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| Hydrogenw_pT | 압력, bara<br />온도, °C | m/s | 압력과 온도로 음속을 계산합니다 |
+| Hydrogenw_ph | 압력, bara<br />엔탈피, kJ/kg | m/s | 압력과 엔탈피로 음속을 계산합니다 |
+| Hydrogenw_ps | 압력, bara<br />엔트로피, kJ/(kgK) | m/s | 압력과 엔트로피로 음속을 계산합니다 |
+
+### 점도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| Hydrogenmy_pT | 압력, bara<br />온도, °C | Pa·s | 압력과 온도로 점도를 계산합니다 |
+| Hydrogenmy_ph | 압력, bara<br />엔탈피, kJ/kg | Pa·s | 압력과 엔탈피로 점도를 계산합니다 |
+| Hydrogenmy_ps | 압력, bara<br />엔트로피, kJ/(kgK) | Pa·s | 압력과 엔트로피로 점도를 계산합니다 |
+
+### 열전도도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| HydrogentcL_p | 압력, bara | W/(mK) | 포화액 열전도도 |
+| HydrogentcV_p | 압력, bara | W/(mK) | 포화증기 열전도도 |
+| HydrogentcL_T | 온도, °C | W/(mK) | 포화액 열전도도 |
+| HydrogentcV_T | 온도, °C | W/(mK) | 포화증기 열전도도 |
+| Hydrogentc_pT | 압력, bara<br />온도, °C | W/(mK) | 압력과 온도로 열전도도를 계산합니다 |
+| Hydrogentc_ph | 압력, bara<br />엔탈피, kJ/kg | W/(mK) | 압력과 엔탈피로 열전도도를 계산합니다 |
+| Hydrogentc_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | W/(mK) | 엔탈피와 엔트로피로 열전도도를 계산합니다 |
+
+### 표면장력
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| Hydrogenstvap_T | 온도, °C | N/m | 온도로 표면장력을 계산합니다 |
+| Hydrogenstvap_p | 압력, bara | N/m | 압력으로 표면장력을 계산합니다 |

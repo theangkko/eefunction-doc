@@ -1,11 +1,12 @@
 ---
-title: Example Guide revised
-description: A guide in my new Starlight docs site!!.
+title: Support
+description: How to request support for eeFunction.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+If you find a problem while using eeFunction or have an idea for improvement, please report it through GitHub Issues.
+Including a reproducible example and your environment helps us review the request faster.
 
-## Further reading
+## Contact channels
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+- Bug reports and feature requests: [GitHub Issues](https://github.com/theangkko/eefunction-doc/issues)
+- Privacy-related inquiries: [dev@brbrsoft.com](mailto:dev@brbrsoft.com)

@@ -1,92 +1,47 @@
-## 🐳 Dev Container 점검 포인트
+# eeFunction Docs
 
-실행시
-`pnpm preview`
+Astro Starlight 기반의 eeFunction 문서 사이트입니다. eeFunction은 Excel에서 유체역학 및 열역학 관련 물성을 빠르게 계산하기 위한 Office Add-in입니다.
 
---- 
+## 주요 구조
 
-- **포트 바인딩**: `npm run dev` 실행 시, 서버가 `0.0.0.0:4321`로 리슨 중인지 확인  
-  (IPv6 `::1`만 바인딩되면 VS Code 포트포워딩/브라우저에서 접속 불가)
-- **접속 확인**:  
-  - 터미널에서 `curl http://127.0.0.1:4321/`로 200 OK 및 HTML 응답 확인
-  - VS Code Ports 패널에서 4321 포트가 `Forwarded` 상태인지 확인
-  - 필요시 `"$BROWSER" http://localhost:4321/`로 브라우저에서 직접 열기
-- **설정**:  
-  - `astro.config.mjs`에 `server: { host: true, port: 4321 }` 설정 필요
-  - 또는 `package.json`의 dev 스크립트에 `--host 0.0.0.0 --port 4321` 옵션 포함
-- **문제 발생 시 점검 명령어**:  
-  ```bash
-  # 포트 리슨 상태 확인
-  lsof -nP -iTCP:4321 -sTCP:LISTEN
-  
-  # 로컬 접속 테스트
-  curl -i http://127.0.0.1:4321/ | head -n 20
-  
-  # 컨테이너 IP로 접속 테스트
-  curl -i http://$(hostname -I | awk '{print $1}'):4321/ | head -n 20
-  ```
-- **초기 빌드 시간**: 첫 실행 시 약 50초 소요됨 (화면이 비어 보일 수 있음)
-
----
-
-## cloudflare AUTO build
-- after adding commit on github 
-- and cloud run 'npm run build' automatically and deploy to cloudflare "eefunction-doc.pages.dev"
-
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-
-
-## Starlight Starter Kit: Basics
-
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
-
-```
-npm create astro@latest -- --template starlight
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
+```text
 .
-├── public/
 ├── src/
-│   ├── assets/
+│   ├── assets/              # 문서 이미지와 아이콘
+│   ├── components/          # 문서에서 사용하는 Astro 컴포넌트
 │   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
+│   │   ├── docs/            # 영문 문서
+│   │   └── docs/ko/         # 한국어 문서
+│   └── styles/              # Starlight 커스텀 CSS
+├── astro.config.mjs         # Starlight 사이트 설정
 ├── package.json
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 개발 명령어
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+| Command | Action |
+| :-- | :-- |
+| `npm install` | 의존성 설치 |
+| `npm run dev` | 로컬 개발 서버 실행 (`0.0.0.0:4321`) |
+| `npm run build` | 정적 사이트 빌드 (`dist/`) |
+| `npm run preview` | 빌드 결과 미리보기 |
+| `npm run astro -- --help` | Astro CLI 도움말 |
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 문서 작성 규칙
 
-## 👀 Want to learn more?
+- 기본 영문 문서는 `src/content/docs/` 아래에 작성합니다.
+- 한국어 문서는 같은 상대 경로로 `src/content/docs/ko/` 아래에 작성합니다.
+- 문서 파일명은 새로 추가할 때 소문자 kebab-case를 사용합니다.
+- 한국어 문서의 내부 링크는 한국어 경로(`/ko/...`)로 연결합니다.
+- 이미지와 표 컴포넌트는 기존 `src/assets/`, `src/components/`, `src/content/docs/reference/` 구조를 재사용합니다.
 
-Check out [Starlight's docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 배포
+
+GitHub에 변경사항이 반영되면 Cloudflare Pages에서 `npm run build`를 실행해 `https://eefunction-doc.pages.dev`로 배포합니다.
+
+## Dev Container 점검
+
+- 개발 서버는 `0.0.0.0:4321`로 리슨해야 합니다.
+- 접속 확인: `curl http://127.0.0.1:4321/`
+- VS Code Ports 패널에서 4321 포트가 `Forwarded` 상태인지 확인합니다.

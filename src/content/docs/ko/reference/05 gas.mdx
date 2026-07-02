@@ -1,35 +1,34 @@
 ---
 title: Gas - Compressible
-description: A reference page.
+description: 압축성 가스 물성 함수 참조 페이지입니다.
 ---
 
 Natural Gas, Nitrogen, Hydrogen 등의 압축성 기체의 물성을 계산하기 위해 다음 코드를 사용합니다:
-{/* - [GERG2008](https://github.com/TorrensJoaquin/GERG2008/) by TorrensJoaquin */}
 - <a href="https://github.com/TorrensJoaquin/GERG2008" target="_blank" rel="noopener noreferrer">GERG2008</a> by TorrensJoaquin
 
 GERG2008은 천연가스 및 기타 혼합가스의 물성을 계산하기 위한 국제 표준 방정식입니다. 이 모듈은 밀도, 압축계수, 엔탈피, 열용량 등 다양한 열역학적 물성을 계산할 수 있으며, 특히 천연가스, 수소, 질소와 같은 산업용 가스의 정확한 물성 계산에 적합합니다.
 
-**Operating Ranges**
-- Pressure: 0 to 350 bara
-- Temperature: -183°C to 277°C
-- Valid ranges may vary depending on the gas mixture composition
+**동작 범위**
+- 압력: 0 to 350 bara
+- 온도: -183°C to 277°C
+- 유효 범위는 가스 혼합물 조성에 따라 달라질 수 있습니다.
 
-**Gas Functions**
+**Gas 함수**
 
 import TableGas from '../../reference/TableGas.astro';
 
 <TableGas />
 
-**Fluid Name Format**
-- The fluid name should be provided as a string specifying the gas mixture composition
-- Example format: "CH4:0.94,C2H6:0.05,CO2:0.01" represents a mixture of:
-  - 94% Methane (CH4)
-  - 5% Ethane (C2H6)
-  - 1% Carbon Dioxide (CO2)
-- Components must sum to 1.0 (100%)
-- Supported components include: CH4 (Methane), C2H6 (Ethane), C3H8 (Propane), N2 (Nitrogen), CO2 (Carbon Dioxide), and others per GERG2008 standard
+**유체 이름 형식**
+- 유체 이름은 가스 혼합물 조성을 나타내는 문자열로 입력합니다.
+- 예: `"CH4:0.94,C2H6:0.05,CO2:0.01"`은 다음 조성을 의미합니다.
+  - 메탄(CH4) 94%
+  - 에탄(C2H6) 5%
+  - 이산화탄소(CO2) 1%
+- 각 성분의 합은 1.0(100%)이어야 합니다.
+- 지원 성분에는 GERG2008 표준에 따른 CH4(메탄), C2H6(에탄), C3H8(프로판), N2(질소), CO2(이산화탄소) 등이 포함됩니다.
 
-**Notes**
-- Temperature is optional parameter for LHV and HHV calculations
-- Temperature defaults to 25°C if not provided for LHV and HHV
-- Temperature must be provided for all other functions
+**참고**
+- LHV와 HHV 계산에서 온도는 선택 입력값입니다.
+- LHV와 HHV에서 온도를 입력하지 않으면 기본값 25°C를 사용합니다.
+- 그 외 모든 함수에는 온도를 입력해야 합니다.

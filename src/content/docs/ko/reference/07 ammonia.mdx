@@ -1,0 +1,131 @@
+---
+title: Ammonia
+description: 암모니아 물성 함수 참조 페이지입니다.
+---
+
+**Ammonia 함수 단위** <span style="color: red;">(WEB-EXCEL ONLY)</span>
+
+참고
+- 압력: bara (절대압)
+- 온도: °C
+- 엔탈피: kJ/kg
+- 엔트로피: kJ/(kgK)
+- 밀도: kg/m3, 비체적: m3/kg
+
+### 온도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3Tsat_p | 압력, bara | °C | 압력으로 포화온도를 계산합니다 |
+| NH3T_ph | 압력, bara<br />엔탈피, kJ/kg | °C | 압력과 엔탈피로 온도를 계산합니다 |
+| NH3T_ps | 압력, bara<br />엔트로피, kJ/(kgK) | °C | 압력과 엔트로피로 온도를 계산합니다 |
+| NH3T_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | °C | 엔탈피와 엔트로피로 온도를 계산합니다 |
+
+### 압력
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3psat_T | 온도, °C | bara | 온도로 포화압력을 계산합니다 |
+| NH3p_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | bara | 엔탈피와 엔트로피로 압력을 계산합니다 |
+| NH3p_hrho | 엔탈피, kJ/kg<br />밀도, kg/m3 | bara | 엔탈피와 밀도로 압력을 계산합니다 |
+
+### 엔탈피
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3hV_p | 압력, bara | kJ/kg | 포화증기 엔탈피 |
+| NH3hL_p | 압력, bara | kJ/kg | 포화액 엔탈피 |
+| NH3hV_T | 온도, °C | kJ/kg | 포화증기 엔탈피 |
+| NH3hL_T | 온도, °C | kJ/kg | 포화액 엔탈피 |
+| NH3h_pT | 압력, bara<br />온도, °C | kJ/kg | 압력과 온도로 엔탈피를 계산합니다 |
+| NH3h_ps | 압력, bara<br />엔트로피, kJ/(kgK) | kJ/kg | 압력과 엔트로피로 엔탈피를 계산합니다 |
+| NH3h_px | 압력, bara<br />증기 건도 | kJ/kg | 압력과 증기 건도로 엔탈피를 계산합니다 |
+| NH3h_Tx | 온도, °C<br />증기 건도 | kJ/kg | 온도와 증기 건도로 엔탈피를 계산합니다 |
+| NH3h_prho | 압력, bara<br />밀도, kg/m3 | kJ/kg | 압력과 밀도로 엔탈피를 계산합니다 |
+
+### 비체적
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3vV_p | 압력, bara | m3/kg | 포화증기 비체적 |
+| NH3vL_p | 압력, bara | m3/kg | 포화액 비체적 |
+| NH3vV_T | 온도, °C | m3/kg | 포화증기 비체적 |
+| NH3vL_T | 온도, °C | m3/kg | 포화액 비체적 |
+| NH3v_pT | 압력, bara<br />온도, °C | m3/kg | 압력과 온도로 비체적을 계산합니다 |
+| NH3v_ph | 압력, bara<br />엔탈피, kJ/kg | m3/kg | 압력과 엔탈피로 비체적을 계산합니다 |
+| NH3v_ps | 압력, bara<br />엔트로피, kJ/(kgK) | m3/kg | 압력과 엔트로피로 비체적을 계산합니다 |
+
+### 밀도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3rhoV_p | 압력, bara | kg/m3 | 포화증기 밀도 |
+| NH3rhoL_p | 압력, bara | kg/m3 | 포화액 밀도 |
+| NH3rhoV_T | 온도, °C | kg/m3 | 포화증기 밀도 |
+| NH3rhoL_T | 온도, °C | kg/m3 | 포화액 밀도 |
+| NH3rho_pT | 압력, bara<br />온도, °C | kg/m3 | 압력과 온도로 밀도를 계산합니다 |
+| NH3rho_ph | 압력, bara<br />엔탈피, kJ/kg | kg/m3 | 압력과 엔탈피로 밀도를 계산합니다 |
+| NH3rho_ps | 압력, bara<br />엔트로피, kJ/(kgK) | kg/m3 | 압력과 엔트로피로 밀도를 계산합니다 |
+
+### 엔트로피
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3sV_p | 압력, bara | kJ/(kgK) | 포화증기 엔트로피 |
+| NH3sL_p | 압력, bara | kJ/(kgK) | 포화액 엔트로피 |
+| NH3sV_T | 온도, °C | kJ/(kgK) | 포화증기 엔트로피 |
+| NH3sL_T | 온도, °C | kJ/(kgK) | 포화액 엔트로피 |
+| NH3s_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 비엔트로피를 계산합니다 |
+| NH3s_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 비엔트로피를 계산합니다 |
+
+### 열용량
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3CpV_p | 압력, bara | kJ/(kgK) | 포화증기 정압비열 |
+| NH3CpL_p | 압력, bara | kJ/(kgK) | 포화액 정압비열 |
+| NH3CpV_T | 온도, °C | kJ/(kgK) | 포화증기 정압비열 |
+| NH3CpL_T | 온도, °C | kJ/(kgK) | 포화액 정압비열 |
+| NH3Cp_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 정압비열을 계산합니다 |
+| NH3Cp_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 정압비열을 계산합니다 |
+| NH3CvV_p | 압력, bara | kJ/(kgK) | 포화증기 정적비열 |
+| NH3CvL_p | 압력, bara | kJ/(kgK) | 포화액 정적비열 |
+| NH3CvV_T | 온도, °C | kJ/(kgK) | 포화증기 정적비열 |
+| NH3CvL_T | 온도, °C | kJ/(kgK) | 포화액 정적비열 |
+| NH3Cv_pT | 압력, bara<br />온도, °C | kJ/(kgK) | 압력과 온도로 정적비열을 계산합니다 |
+| NH3Cv_ph | 압력, bara<br />엔탈피, kJ/kg | kJ/(kgK) | 압력과 엔탈피로 정적비열을 계산합니다 |
+
+### 음속
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3w_pT | 압력, bara<br />온도, °C | m/s | 압력과 온도로 음속을 계산합니다 |
+| NH3w_ph | 압력, bara<br />엔탈피, kJ/kg | m/s | 압력과 엔탈피로 음속을 계산합니다 |
+| NH3w_ps | 압력, bara<br />엔트로피, kJ/(kgK) | m/s | 압력과 엔트로피로 음속을 계산합니다 |
+
+### 점도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3my_pT | 압력, bara<br />온도, °C | Pa·s | 압력과 온도로 점도를 계산합니다 |
+| NH3my_ph | 압력, bara<br />엔탈피, kJ/kg | Pa·s | 압력과 엔탈피로 점도를 계산합니다 |
+| NH3my_ps | 압력, bara<br />엔트로피, kJ/(kgK) | Pa·s | 압력과 엔트로피로 점도를 계산합니다 |
+
+### 열전도도
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3tcL_p | 압력, bara | W/(mK) | 포화액 열전도도 |
+| NH3tcV_p | 압력, bara | W/(mK) | 포화증기 열전도도 |
+| NH3tcL_T | 온도, °C | W/(mK) | 포화액 열전도도 |
+| NH3tcV_T | 온도, °C | W/(mK) | 포화증기 열전도도 |
+| NH3tc_pT | 압력, bara<br />온도, °C | W/(mK) | 압력과 온도로 열전도도를 계산합니다 |
+| NH3tc_ph | 압력, bara<br />엔탈피, kJ/kg | W/(mK) | 압력과 엔탈피로 열전도도를 계산합니다 |
+| NH3tc_hs | 엔탈피, kJ/kg<br />엔트로피, kJ/(kgK) | W/(mK) | 엔탈피와 엔트로피로 열전도도를 계산합니다 |
+
+### 표면장력
+
+| Abbr. | 입력 단위 | 결과 단위 | 함수 설명 |
+| --- | --- | --- | --- |
+| NH3stvap_T | 온도, °C | N/m | 온도로 표면장력을 계산합니다 |
+| NH3stvap_p | 압력, bara | N/m | 압력으로 표면장력을 계산합니다 |

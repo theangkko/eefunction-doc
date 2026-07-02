@@ -1,12 +1,12 @@
 ---
-title: Example Guide revised
-description: A guide in my new Starlight docs site!!.
+title: Examples
+description: Examples for using eeFunction.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+This page is reserved for eeFunction usage examples.
+Function-specific examples will be added alongside each reference page.
 
-## Further reading
+## See also
 
-- Read [about how-to guides](https://eefunction-doc.pages.dev/example/example01/) in the documentation.
-
+- [Getting Started](/user-guide/getting-started/)
+- [Engineering Function](/function/engineering-function/)
